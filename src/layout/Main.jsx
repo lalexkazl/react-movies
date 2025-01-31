@@ -17,7 +17,7 @@ class Main extends React.Component {
 			.then((data) =>
 				this.setState({ movies: data.Search, loading: false })
 			)
-			.cath((err) => {
+			.catch((err) => {
 				console.log(err);
 				this.setState({loading: false })
 			})
@@ -34,7 +34,7 @@ class Main extends React.Component {
 			.then((data) =>
 				this.setState({ movies: data.Search, loading: false })
 			)
-			.cath((err) => {
+			.catch((err) => {
 				console.log(err);
 				this.setState({loading: false })
 			});
